@@ -11,11 +11,17 @@ Here's how you can use the TensorCalculator module in your Python code:
 from tensor_calculator import TensorCalculator
 
 tensor_ones(dim_x, dim_y, dim_z): Create a tensor filled with ones of the specified dimensions.
+
 tensor_zeros(dim_x, dim_y, dim_z): Create a tensor filled with zeros of the specified dimensions.
+
 tensor_rand(dim_x, dim_y, dim_z): Create a tensor filled with random values of the specified dimensions.
+
 tensor_plus(d, f): Perform element-wise addition of two tensors.
+
 tensor_mul(d, f): Perform element-wise multiplication of two tensors.
+
 tensor_res(d, f): Perform element-wise subtraction of two tensors.
+
 tensor_div(d, f): Perform element-wise division of two tensors.
 
 
