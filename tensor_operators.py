@@ -37,22 +37,12 @@ class TensorCalculator():
 
         return mul
 
+    def tensor_res(d, f):
+        res = d - f
 
-dim_x = (4)
-dim_y = (2)
-dim_z = (2)
+        return res
 
-d = TensorCalculator.tensor_ones(dim_x, dim_y, dim_z)
-d
+    def tensor_div(d, f):
+        div = d / f
 
-e = TensorCalculator.tensor_zeros(dim_x, dim_y, dim_z)
-e
-
-f = TensorCalculator.tensor_rand(dim_x, dim_y, dim_z)
-f
-
-g = TensorCalculator.tensor_plus(d, f)
-g
-
-h = TensorCalculator.tensor_mul(f, f)
-h
+        return div
