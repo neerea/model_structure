@@ -10,6 +10,8 @@ Here's how you can use the TensorCalculator module in your Python code:
 
 from tensor_calculator import TensorCalculator
 
+These are the functions used:
+
 tensor_ones(dim_x, dim_y, dim_z): Create a tensor filled with ones of the specified dimensions.
 
 tensor_zeros(dim_x, dim_y, dim_z): Create a tensor filled with zeros of the specified dimensions.
@@ -24,6 +26,7 @@ tensor_res(d, f): Perform element-wise subtraction of two tensors.
 
 tensor_div(d, f): Perform element-wise division of two tensors.
 
+tensor_concatenate(d, f, axis): Concatenate two tensors along the specified axis. (0,1,2)
 
 # License
 This code is provided under the MIT License. You are free to use and modify it in your projects.
