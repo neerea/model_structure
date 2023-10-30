@@ -46,3 +46,8 @@ class TensorCalculator():
         div = d / f
 
         return div
+
+    def tensor_concatenate(d,f,axis):
+        concatenate = torch.cat((d,f),dim=axis)
+
+        return concatenate
