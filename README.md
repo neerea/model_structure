@@ -7,24 +7,21 @@ To use this module, you need to have PyTorch installed. You can install PyTorch 
 
 Here's how you can use the TensorCalculator module in your Python code:
 
-  from tensor_calculator import TensorCalculator
-
-Create a TensorCalculator instance
-calculator = TensorCalculator()
+  from module_structure.tensor_operators import TensorCalculator
 
 Create tensors filled with ones, zeros, and random values:
-ones_tensor = calculator.tensor_ones(dim_x, dim_y, dim_z)
-zeros_tensor = calculator.tensor_zeros(dim_x, dim_y, dim_z)
-rand_tensor = calculator.tensor_rand(dim_x, dim_y, dim_z)
+ones_tensor = TensorCalculator.tensor_ones(dim_x, dim_y, dim_z)
+zeros_tensor = TensorCalculator.tensor_zeros(dim_x, dim_y, dim_z)
+rand_tensor = TensorCalculator.tensor_rand(dim_x, dim_y, dim_z)
 
 Perform tensor addition, multiplication, subtraction, and division:
-result_addition = calculator.tensor_plus(tensor_d, tensor_f)
-result_multiplication = calculator.tensor_mul(tensor_d, tensor_f)
-result_subtraction = calculator.tensor_res(tensor_d, tensor_f)
-result_division = calculator.tensor_div(tensor_d, tensor_f)
+result_addition = TensorCalculator.tensor_plus(tensor_d, tensor_f)
+result_multiplication = TensorCalculator.tensor_mul(tensor_d, tensor_f)
+result_subtraction = TensorCalculator.tensor_res(tensor_d, tensor_f)
+result_division = TensorCalculator.tensor_div(tensor_d, tensor_f)
 
 Concatenate tensors along a specified axis:
-result_concatenation = calculator.tensor_concatenate(tensor_d, tensor_f, axis)
+result_concatenation = TensorCalculator.tensor_concatenate(tensor_d, tensor_f, axis)
 
 # Usage
 
