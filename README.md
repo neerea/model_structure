@@ -5,10 +5,28 @@ TensorCalculator is a Python module that provides utility functions for working 
 To use this module, you need to have PyTorch installed. You can install PyTorch using the following command:
   pip install torch
 
-# Usage
 Here's how you can use the TensorCalculator module in your Python code:
 
-from tensor_calculator import TensorCalculator
+  from tensor_calculator import TensorCalculator
+
+Create a TensorCalculator instance
+calculator = TensorCalculator()
+
+Create tensors filled with ones, zeros, and random values:
+ones_tensor = calculator.tensor_ones(dim_x, dim_y, dim_z)
+zeros_tensor = calculator.tensor_zeros(dim_x, dim_y, dim_z)
+rand_tensor = calculator.tensor_rand(dim_x, dim_y, dim_z)
+
+Perform tensor addition, multiplication, subtraction, and division:
+result_addition = calculator.tensor_plus(tensor_d, tensor_f)
+result_multiplication = calculator.tensor_mul(tensor_d, tensor_f)
+result_subtraction = calculator.tensor_res(tensor_d, tensor_f)
+result_division = calculator.tensor_div(tensor_d, tensor_f)
+
+Concatenate tensors along a specified axis:
+result_concatenation = calculator.tensor_concatenate(tensor_d, tensor_f, axis)
+
+# Usage
 
 These are the functions used:
 
