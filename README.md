@@ -7,7 +7,7 @@ To use this module, you need to have PyTorch installed. You can install PyTorch 
 
 Here's how you can use the TensorCalculator module in your Python code:
 
-  from module_structure.tensor_operators import TensorCalculator
+  from module_structure.tensor_operators import *
 
 Create tensors filled with ones, zeros, and random values:
 ones_tensor = TensorCalculator.tensor_ones(dim_x, dim_y, dim_z)
